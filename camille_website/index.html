@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camille | Welcome - Bienvenue</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .language-btn-container {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 480px) {
+            .language-btn-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body style="overflow: hidden;"> <!-- Hide scrolling on the landing choice page -->
+
+    <header id="hero" class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-content fade-in-up">
+            <h2 class="sub-heading">Welcome &bull; Bienvenue</h2>
+            <h1 class="main-heading">Camille</h1>
+            <p class="tagline">Please select your preferred language &nbsp;|&nbsp; Veuillez sélectionner votre langue</p>
+            
+            <div class="language-btn-container">
+                <a href="en.html" class="btn" style="min-width: 180px;" onclick="sessionStorage.setItem('langSelected','1')">English</a>
+                <a href="fr.html" class="btn" style="min-width: 180px;" onclick="sessionStorage.setItem('langSelected','1')">Français</a>
+            </div>
+        </div>
+    </header>
+
+</body>
+</html>

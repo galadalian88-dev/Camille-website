@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camille | St-Lambert Premium Companion</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theater.css">
+    <script>
+        // Language guard — always show picker first in a session
+        if (!sessionStorage.getItem('langSelected')) {
+            window.location.replace('index.html');
+        }
+    </script>
+</head>
+<body>
+
+    <nav id="primary-nav">
+        <div class="logo">Camille</div>
+        <div class="nav-links">
+            <a href="#intro">Introduction</a>
+            <a href="#details">Details</a>
+            <a href="#visuals">Visual</a>
+            <a href="#investment">Investment</a>
+            <a href="#request">Date Request</a>
+            <a href="fr.html" class="lang-toggle" title="Voir en Français">FR</a>
+        </div>
+        <div class="nav-mobile-btn">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <a href="#intro">Introduction</a>
+        <a href="#details">Details</a>
+        <a href="#visuals">Visual</a>
+        <a href="#investment">Investment</a>
+        <a href="#request">Date Request</a>
+    </div>
+
+    <header id="hero" class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-content fade-in-up">
+            <h2 class="sub-heading">Elegant & Irresistible</h2>
+            <h1 class="main-heading">Camille</h1>
+            <p class="tagline">Based in St-Lambert | Premium Incall Experience</p>
+            <a href="#request" class="btn">Meet Me</a>
+        </div>
+    </header>
+
+    <main id="lqd-site-content">
+        
+        <!-- INTRODUCTION -->
+        <section id="intro" class="section intro-section content-block reveal">
+            <div class="section-badge">SENSUAL & FEMININE</div>
+            <h2 class="section-title">Introduction</h2>
+            <div class="text-container">
+                <p>
+                    Bonjour! I am Camille—a beautiful, tall blonde with an alluring face and an elegant presence. 
+                    I offer a deeply sensual, refined, and completely immersive experience. With a touch of elegance 
+                    and a hint of mystery, I bring passion to every encounter.
+                </p>
+                <p>
+                    Whether it’s a night of intense connection or an intimate conversation, I promise an unforgettable 
+                    time wrapped in class and authenticity. I enjoy meeting gentlemen who appreciate true chemistry, 
+                    creating memories that turn deep fantasies into reality.
+                </p>
+            </div>
+        </section>
+
+        <!-- DETAILS -->
+        <section id="details" class="section details-section content-block reveal">
+            <div class="section-badge">THE DETAILS</div>
+            <h2 class="section-title">Get To Know Me</h2>
+            <div class="details-grid">
+                <div class="detail-item"><span>Location:</span> St-Lambert (Private & Discreet Studio)</div>
+                <div class="detail-item"><span>Height & Weight:</span> 5'9" | 147 lbs</div>
+                <div class="detail-item"><span>Measurements:</span> 36C</div>
+                <div class="detail-item"><span>Age:</span> 39</div>
+                <div class="detail-item"><span>Hair:</span> Blonde</div>
+                <div class="detail-item"><span>Style:</span> True GFE / PSE</div>
+                <div class="detail-item"><span>Included:</span> BBBJ, DFK, Sensual Massage</div>
+            </div>
+            <p class="details-text">
+                Je te reçois chez-moi à St-Lambert en privé. Appartement propre et discret.
+            </p>
+        </section>
+
+        <!-- VISUALS -->
+        <section id="visuals" class="section visual-section reveal">
+            <div class="section-badge">EXQUISITE & GRACEFUL</div>
+            <h2 class="section-title">Visual</h2>
+            <div class="gallery">
+                <img src="assets/camille_10.jpg" alt="Camille Portrait" class="gallery-img">
+                <img src="assets/camille_7.jpg" alt="Camille Portrait" class="gallery-img">
+                <img src="assets/camille_9.jpg" alt="Camille Full Body" class="gallery-img">
+                <img src="assets/camille_11.jpg" alt="Camille Close Up" class="gallery-img">
+                <img src="assets/camille_12.jpg" alt="Camille Elegant" class="gallery-img">
+                <img src="assets/camille_13.jpg" alt="Camille Full Body" class="gallery-img">
+            </div>
+        </section>
+
+        <!-- THEATER CAROUSEL LIGHTBOX -->
+        <div class="theater-overlay" id="theater" role="dialog" aria-modal="true">
+            <button class="theater-close" id="theater-close" aria-label="Close">&times;</button>
+            <button class="theater-arrow theater-prev" id="theater-prev" aria-label="Previous image">&#8249;</button>
+            <img src="" alt="Camille" id="theater-img" class="theater-img">
+            <button class="theater-arrow theater-next" id="theater-next" aria-label="Next image">&#8250;</button>
+            <div class="theater-counter" id="theater-counter"></div>
+            <div class="theater-dots" id="theater-dots"></div>
+        </div>
+        <section id="investment" class="section investment-section content-block reveal">
+            <div class="section-badge">HONORARIUM RATES</div>
+            <h2 class="section-title">Investment</h2>
+            <p class="investment-intro">I accommodate intimate incalls at my clean, discreet St-Lambert apartment.</p>
+            
+            <div class="rates-container">
+                <div class="rate-item">
+                    <span class="time">30 Minutes</span>
+                    <span class="price">$160</span>
+                </div>
+                <div class="rate-item">
+                    <span class="time">45 Minutes</span>
+                    <span class="price">$190</span>
+                </div>
+                <div class="rate-item">
+                    <span class="time">1 Hour</span>
+                    <span class="price">$220</span>
+                </div>
+            </div>
+            
+            <p class="investment-fineprint">
+                <em>* Please note: I do not offer CIM or swallowing. Screening is required for new clients.</em>
+            </p>
+        </section>
+
+        <!-- DATE REQUEST -->
+        <section id="request" class="section request-section content-block reveal">
+            <div class="section-badge">ARRANGE OUR DATE</div>
+            <h2 class="section-title">Date Request</h2>
+            <p class="request-intro">
+                Please complete the form below, and I will be back in touch. I take my safety and your privacy very seriously.
+            </p>
+
+            <form class="booking-form" onsubmit="event.preventDefault();">
+                <div class="form-group">
+                    <input type="text" placeholder="Name *" required>
+                    <input type="email" placeholder="Email *" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Phone Number">
+                    <input type="text" placeholder="When would you like to meet?">
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="" disabled selected>Date Length *</option>
+                        <option value="30m">30 Minutes</option>
+                        <option value="45m">45 Minutes</option>
+                        <option value="1hr">1 Hour</option>
+                    </select>
+                    <input type="text" placeholder="Verification / References (Required)">
+                </div>
+                <textarea placeholder="What should I know about you?"></textarea>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">I accept the terms and privacy policy.</label>
+                </div>
+                <button type="submit" class="submit-btn">Send Request</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3 class="footer-logo">Camille</h3>
+            <p>St-Lambert • GFE • Premium Incall</p>
+            <p class="copyright">&copy; 2026. Camille. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/theater.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

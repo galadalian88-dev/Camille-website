@@ -1,0 +1,122 @@
+/* ==============================================
+   THEATER CAROUSEL LIGHTBOX — Shared Component
+   Drop this into any escort site's CSS file
+   ============================================== */
+
+/* Overlay backdrop */
+.theater-overlay {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.96);
+    z-index: 3000;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+.theater-overlay.open { display: flex; }
+
+/* Main image */
+.theater-img {
+    max-width: 88vw;
+    max-height: 86vh;
+    object-fit: contain;
+    display: block;
+    animation: theaterIn .25s ease;
+    user-select: none;
+    -webkit-user-drag: none;
+}
+@keyframes theaterIn {
+    from { opacity: 0; transform: scale(.93); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+/* Close button */
+.theater-close {
+    position: fixed;
+    top: 1.2rem;
+    right: 1.8rem;
+    font-size: 2.8rem;
+    color: rgba(255,255,255,.7);
+    cursor: pointer;
+    z-index: 3010;
+    background: none;
+    border: none;
+    line-height: 1;
+    padding: .2rem .5rem;
+    transition: color .2s, transform .2s;
+}
+.theater-close:hover { color: #fff; transform: scale(1.15); }
+
+/* Left / Right arrow buttons */
+.theater-arrow {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3.5rem;
+    color: rgba(255,255,255,.55);
+    cursor: pointer;
+    z-index: 3010;
+    background: rgba(0, 0, 0, .45);
+    border: 1px solid rgba(255,255,255,.1);
+    padding: .4rem .9rem;
+    line-height: 1;
+    transition: all .2s ease;
+    user-select: none;
+}
+.theater-arrow:hover {
+    color: #fff;
+    background: rgba(0,0,0,.75);
+    border-color: rgba(255,255,255,.3);
+}
+.theater-prev { left: 1rem; border-radius: 0 4px 4px 0; }
+.theater-next { right: 1rem; border-radius: 4px 0 0 4px; }
+
+/* Counter badge */
+.theater-counter {
+    position: fixed;
+    bottom: 1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255,255,255,.5);
+    font-size: .8rem;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    font-family: var(--font-body, sans-serif);
+    background: rgba(0,0,0,.4);
+    padding: .4rem 1.2rem;
+    border-radius: 20px;
+    pointer-events: none;
+}
+
+/* Dot strip (optional — shows position) */
+.theater-dots {
+    position: fixed;
+    bottom: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: .5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 90vw;
+    pointer-events: none;
+}
+.theater-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(255,255,255,.2);
+    transition: background .2s;
+    pointer-events: all;
+    cursor: pointer;
+}
+.theater-dot.active { background: rgba(255,255,255,.8); }
+
+/* Swipe hint on mobile */
+@media (max-width: 768px) {
+    .theater-arrow { font-size: 2.2rem; padding: .3rem .7rem; }
+    .theater-prev  { left: .5rem; }
+    .theater-next  { right: .5rem; }
+}

@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camille | Compagne Premium à Saint-Lambert</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/theater.css">
+    <script>
+        // Garde de langue — toujours afficher le sélecteur en premier
+        if (!sessionStorage.getItem('langSelected')) {
+            window.location.replace('index.html');
+        }
+    </script>
+</head>
+<body>
+
+    <nav id="primary-nav">
+        <div class="logo">Camille</div>
+        <div class="nav-links">
+            <a href="#intro">Introduction</a>
+            <a href="#details">Détails</a>
+            <a href="#visuals">Photos</a>
+            <a href="#investment">Honoraires</a>
+            <a href="#request">Demande</a>
+            <a href="en.html" class="lang-toggle" title="View in English">EN</a>
+        </div>
+        <div class="nav-mobile-btn">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <div class="mobile-menu">
+        <a href="#intro">Introduction</a>
+        <a href="#details">Détails</a>
+        <a href="#visuals">Photos</a>
+        <a href="#investment">Honoraires</a>
+        <a href="#request">Demande</a>
+    </div>
+
+    <header id="hero" class="hero-section">
+        <div class="hero-bg"></div>
+        <div class="hero-content fade-in-up">
+            <h2 class="sub-heading">Élégante & Irrésistible</h2>
+            <h1 class="main-heading">Camille</h1>
+            <p class="tagline">Basée à St-Lambert | Expérience Premium sur place</p>
+            <a href="#request" class="btn">Rencontrez-moi</a>
+        </div>
+    </header>
+
+    <main id="lqd-site-content">
+        
+        <!-- INTRODUCTION -->
+        <section id="intro" class="section intro-section content-block reveal">
+            <div class="section-badge">SENSUELLE & FÉMININE</div>
+            <h2 class="section-title">Introduction</h2>
+            <div class="text-container">
+                <p>
+                    Bonjour ! Je suis Camille — une belle et grande blonde avec un visage séduisant et une présence élégante. 
+                    J'offre une expérience profondément sensuelle, raffinée et complètement immersive. Avec une touche d'élégance 
+                    et un soupçon de mystère, j'apporte de la passion à chaque rencontre.
+                </p>
+                <p>
+                    Que ce soit pour une nuit de connexion intense ou une conversation intime, je vous promets un moment inoubliable 
+                    empreint de classe et d'authenticité. J'apprécie rencontrer des gentlemen qui reconnaissent la vraie alchimie, 
+                    afin de créer des souvenirs qui transforment les fantasmes profonds en réalité.
+                </p>
+            </div>
+        </section>
+
+        <!-- DETAILS -->
+        <section id="details" class="section details-section content-block reveal">
+            <div class="section-badge">LES DÉTAILS</div>
+            <h2 class="section-title">Faisons connaissance</h2>
+            <div class="details-grid">
+                <div class="detail-item"><span>Lieu :</span> St-Lambert (Studio privé et discret)</div>
+                <div class="detail-item"><span>Taille et Poids :</span> 5'9" | 147 lbs</div>
+                <div class="detail-item"><span>Mensurations :</span> 36C</div>
+                <div class="detail-item"><span>Âge :</span> 39 ans</div>
+                <div class="detail-item"><span>Cheveux :</span> Blonds</div>
+                <div class="detail-item"><span>Style :</span> Vraie GFE / PSE</div>
+                <div class="detail-item"><span>Inclus :</span> BBBJ, DFK, Massage sensuel</div>
+            </div>
+            <p class="details-text">
+                Je te reçois chez-moi à St-Lambert en privé. Appartement propre et discret.
+            </p>
+        </section>
+
+        <!-- VISUALS -->
+        <section id="visuals" class="section visual-section reveal">
+            <div class="section-badge">EXQUISE & GRACIEUSE</div>
+            <h2 class="section-title">Photos</h2>
+            <div class="gallery">
+                <img src="assets/camille_10.jpg" alt="Camille Portrait" class="gallery-img">
+                <img src="assets/camille_7.jpg" alt="Camille Portrait" class="gallery-img">
+                <img src="assets/camille_9.jpg" alt="Camille Full Body" class="gallery-img">
+                <img src="assets/camille_11.jpg" alt="Camille Close Up" class="gallery-img">
+                <img src="assets/camille_12.jpg" alt="Camille Elegant" class="gallery-img">
+                <img src="assets/camille_13.jpg" alt="Camille Full Body" class="gallery-img">
+            </div>
+        </section>
+
+        <!-- THEATER CAROUSEL LIGHTBOX -->
+        <div class="theater-overlay" id="theater" role="dialog" aria-modal="true">
+            <button class="theater-close" id="theater-close" aria-label="Fermer">&times;</button>
+            <button class="theater-arrow theater-prev" id="theater-prev" aria-label="Image précédente">&#8249;</button>
+            <img src="" alt="Camille" id="theater-img" class="theater-img">
+            <button class="theater-arrow theater-next" id="theater-next" aria-label="Image suivante">&#8250;</button>
+            <div class="theater-counter" id="theater-counter"></div>
+            <div class="theater-dots" id="theater-dots"></div>
+        </div>
+
+        <!-- INVESTMENT -->
+        <section id="investment" class="section investment-section content-block reveal">
+            <div class="section-badge">TARIFS</div>
+            <h2 class="section-title">Honoraires</h2>
+            <p class="investment-intro">Je reçois pour des rencontres intimes dans mon appartement propre et discret à St-Lambert.</p>
+            
+            <div class="rates-container">
+                <div class="rate-item">
+                    <span class="time">30 Minutes</span>
+                    <span class="price">160 $</span>
+                </div>
+                <div class="rate-item">
+                    <span class="time">45 Minutes</span>
+                    <span class="price">190 $</span>
+                </div>
+                <div class="rate-item">
+                    <span class="time">1 Heure</span>
+                    <span class="price">220 $</span>
+                </div>
+            </div>
+            
+            <p class="investment-fineprint">
+                <em>* Veuillez noter : Je n'offre pas l'éjaculation dans la bouche. Une vérification est requise pour les nouveaux clients.</em>
+            </p>
+        </section>
+
+        <!-- DATE REQUEST -->
+        <section id="request" class="section request-section content-block reveal">
+            <div class="section-badge">ORGANISER NOTRE RENCONTRE</div>
+            <h2 class="section-title">Demande de rendez-vous</h2>
+            <p class="request-intro">
+                Veuillez remplir le formulaire ci-dessous et je vous recontacterai. Je prends ma sécurité et votre vie privée très au sérieux.
+            </p>
+
+            <form class="booking-form" onsubmit="event.preventDefault();">
+                <div class="form-group">
+                    <input type="text" placeholder="Nom *" required>
+                    <input type="email" placeholder="Courriel *" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" placeholder="Numéro de téléphone">
+                    <input type="text" placeholder="Quand aimeriez-vous me rencontrer ?">
+                </div>
+                <div class="form-group">
+                    <select required>
+                        <option value="" disabled selected>Durée du rendez-vous *</option>
+                        <option value="30m">30 Minutes</option>
+                        <option value="45m">45 Minutes</option>
+                        <option value="1hr">1 Heure</option>
+                    </select>
+                    <input type="text" placeholder="Vérification / Références (Obligatoire)">
+                </div>
+                <textarea placeholder="Que devrais-je savoir sur vous ?"></textarea>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="terms" required>
+                    <label for="terms">J'accepte les conditions et la politique de confidentialité.</label>
+                </div>
+                <button type="submit" class="submit-btn">Envoyer la demande</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <h3 class="footer-logo">Camille</h3>
+            <p>St-Lambert • GFE • Rencontre Premium</p>
+            <p class="copyright">&copy; 2026. Camille. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <!-- JS -->
+    <script src="js/theater.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
